@@ -1,14 +1,22 @@
 import React from "react"
 import data from "../../data.json"
 import Card from "../../components/Card"
+import Hero from "./Hero"
+import { Link } from "react-router"
 
 const Home = () => {
   return (
-    <div className="p-4">
-      <div className="flex justify-start items-center gap-8">
-        {data.map((item) => (
-          <Card {...item} />
-        ))}
+    <div className=" mx-auto bg-gray-50">
+      <Hero />
+      <div className="container mx-auto my-8">
+        <h3 className="text-xl font-semibold py-4">Featured Tools</h3>
+        <div className="flex flex-wrap justify-start items-center gap-8">
+          {data.map((item) => (
+            <a target="_blank" href={item.url}>
+              <Card {...item} />
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   )
