@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="mx-auto">
       <div className="min-h-screen ">
-        <div className="h-screen bg-[url('./images/bg.jpg')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-start gap-8">
+        <div className="h-screen bg-[url('/images/bg.jpg')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-start gap-8">
           <h3 className="font-semibold text-7xl text-center mt-48">
             Doing it all in <span className="text-blue-500 font-playball">fresh,</span> <br />{" "}
             <span className="text-blue-500 font-playball">exciting</span> ways!
